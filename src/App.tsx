@@ -4,7 +4,6 @@ import Header from './layout/Header';
 import HeroSection from './layout/HeroSection';
 import StatsBar from './layout/StatsBar';
 import ChannelsSection from './layout/ChannelsSection';
-import AboutSection from './assets/sections/AboutSection';
 import ImpactSection from './assets/sections/ImpactSection';
 import CtaSection from './assets/sections/CtaSection';
 import Footer from './layout/Footer';
@@ -54,23 +53,19 @@ function App() {
         </Stack>
       </Modal>
       <Header />
-      <Box style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+      <Box style={{ display: "flex", flexDirection: "column", gap: 45 }}>
         <HeroSection />
         <StatsBar />
         <ChannelsSection />
         <Flex
-          direction={{ base: "column", lg: "row" }}
-          gap="md"
+          direction="column"
+          gap="xl"
           align="stretch"
-          mx={20}
+          mx={10}
         >
-          <Box style={{ flex: 1 }}>
-            <AboutSection />
-          </Box>
-          <Box style={{ flex: 1 }}>
-            <ImpactSection />
-          </Box>
-        </Flex>
+          
+             <ImpactSection />
+         </Flex>
         <CtaSection />
         <Footer />
       </Box>

@@ -94,6 +94,10 @@
     grid-template-columns: minmax(220px, 0.48fr) minmax(0, 1fr);
   }
 
+  .about-value {
+    min-width: 0;
+  }
+
   @media (max-width: 767px) {
     .about-layout {
       grid-template-columns: 1fr;

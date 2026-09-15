@@ -19,7 +19,7 @@ const VALUES = [
  ];
 
 const AboutSection: React.FC = () => (
-	<Card component="section" className="about-card" radius="sm" p={0} withBorder style={{ overflow: "hidden", height: "100%" }}>
+	<Card component="section" className="about-card" radius="md" p={0} withBorder style={{ overflow: "hidden", height: "100%", borderColor: "#E5E7EB" }}>
 		<Box className="about-layout">
 			<Box
 				component="img"
@@ -28,21 +28,21 @@ const AboutSection: React.FC = () => (
 				alt="Balance de la justice"
 				style={{ width: "100%", height: "100%", minHeight: 250, objectFit: "cover" }}
 			/>
-			<Stack p={{ base: "xs", md: "xl" }} gap="sm" style={{ backgroundColor: "#fff" }}>
+			<Stack p={{ base: "lg", md: "xl" }} gap="md" style={{ backgroundColor: "#fff" }}>
 				<Text size="xs" fw={700} style={{ color: COLORS.gold, letterSpacing: "0.04em" }}>
 					POURQUOI CETTE PLATEFORME ?
 				</Text>
-				<Title order={2} style={{ color: COLORS.green, fontSize: 22, lineHeight: 1.1 }}>
+				<Title order={2} style={{ color: COLORS.green, fontSize: "clamp(1.5rem, 2.5vw, 2rem)", lineHeight: 1.08 }}>
 					Un accès plus simple<br />et plus rapide à la justice
 				</Title>
 				<Text size="sm" maw={560} style={{ color: COLORS.muted }}>
 					Notre plateforme vous permet de faire vos démarches sans vous déplacer, en toute sécurité et en toute confidentialité. Elle rapproche la justice de tous les citoyens du Sénégal, partout et à tout moment.
 				</Text>
-				<SimpleGrid className="about-values" cols={{ base: 1, sm: 3 }} spacing="md" mt="xs">
+				<SimpleGrid className="about-values" cols={{ base: 1, sm: 3 }} spacing="sm" mt="sm">
 					{VALUES.map(({ icon: Icon, title, text }) => (
-						<Group key={title} gap="xs" align="flex-start" wrap="nowrap">
-							<ThemeIcon size={30} variant="transparent" style={{ color: COLORS.gold }}>
-								<Icon size={22} />
+						<Group key={title} gap="xs" align="flex-start" wrap="nowrap" className="about-value">
+							<ThemeIcon size={34} radius="xl" style={{ color: COLORS.gold, backgroundColor: "#F8F1DC", flexShrink: 0 }}>
+								<Icon size={19} />
 							</ThemeIcon>
 							<Box>
 								<Text size="xs" fw={700} style={{ color: COLORS.green }}>{title}</Text>

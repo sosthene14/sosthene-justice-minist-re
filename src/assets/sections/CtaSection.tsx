@@ -11,7 +11,7 @@ const COLORS = {
 const CtaSection: React.FC = () => (
 	<Box
 		component="section"
-		mx={20}
+		mx={10}
 		px={{ base: "lg", md: "xl" }}
 		py="md"
 		style={{

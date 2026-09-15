@@ -88,8 +88,10 @@ const ChannelsSection: React.FC = () => {
       component="section"
       aria-labelledby="channels-title"
       px={{ base: "md", md: "lg" }}
+      mx={10}
+      className=" rounded-md"
       py={{ base: "xl", md: 36 }}
-      style={{ backgroundColor: COLORS.background }}
+      style={{ backgroundColor: COLORS.background, borderRadius: 5 }}
     >
       <Stack gap={4} mb="lg">
         <Text

@@ -58,14 +58,14 @@ const STATS: Stat[] = [
 const StatsBar: React.FC = () => {
   return (
     <Box
+      mx={10}
       component="section"
       aria-label="Statistiques du service public"
       px={{ base: "md", md: "lg" }}
       py="md"
       style={{
         backgroundColor: COLORS.background,
-       
-       
+         borderRadius: 5
       }}
     >
       <SimpleGrid className="stats-grid" cols={{ base: 2, md: 4 }} spacing={0}>
